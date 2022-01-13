@@ -1,0 +1,8 @@
+#!/bin/bash
+
+eval "$(conda shell.bash hook)"
+conda activate gan
+
+cd /home/heekang/workspace/gan
+
+jupyter lab --config=".jlab_config.py"

@@ -1,0 +1,6 @@
+data/*
+result
+.ipynb_checkpoints
+_cache_*
+
+!data/scripts/

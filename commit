@@ -1,0 +1,10 @@
+#!/bin/bash
+
+git config user.email "park.heekang33@gmail.com"
+git config user.name "Heekang Park"
+
+time=`date '+%F %H:%M'`
+
+git add .
+git commit -m "$time"
+git push origin master

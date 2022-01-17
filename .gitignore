@@ -2,5 +2,6 @@ data/*
 result
 .ipynb_checkpoints
 _cache_*
+nohup.out
 
 !data/scripts/

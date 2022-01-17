@@ -46,7 +46,7 @@ def main(out_dir='', category=None):
 
 
 if __name__ == '__main__':
-    root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = "data/lsun"
 
     os.system(f"rm -rf {os.path.join(root_dir, data_dir)}")

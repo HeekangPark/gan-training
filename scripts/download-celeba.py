@@ -5,7 +5,7 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 api = KaggleApi()
 api.authenticate()
 
-root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data_dir = "data/celeba/real"
 
 os.system(f"rm -rf {os.path.join(root_dir, data_dir)}")

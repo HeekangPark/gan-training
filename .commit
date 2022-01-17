@@ -1,12 +1,21 @@
 #!/bin/bash
 
-git config user.email "park.heekang33@gmail.com"
-git config user.name "Heekang Park"
-
 cd $(dirname $0)
 
+# remove files
 rm _cache_*
 rm -f scripts/nohup.out
+
+# update environment.yml
+eval "$(conda shell.bash hook)"
+conda activate gan
+
+conda env export > environment.yml
+sed -i '/- pip:/a \ \ \ \ - --find-links https://download.pytorch.org/whl/torch_stable.html' environment.yml
+
+# commit
+git config user.email "park.heekang33@gmail.com"
+git config user.name "Heekang Park"
 
 time=`date '+%F %H:%M'`
 

@@ -5,4 +5,4 @@ conda activate gan
 
 cd /home/heekang/workspace/gan
 
-jupyter lab --config=".jlab_config.py"
+jupyter lab --config=".jlab_config_$(hostname).py"

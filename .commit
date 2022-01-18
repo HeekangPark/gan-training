@@ -3,7 +3,7 @@
 cd $(dirname $0)
 
 # remove files
-rm _cache_*
+rm -f _cache_*
 rm -f scripts/nohup.out
 
 # update environment.yml

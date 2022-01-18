@@ -5,7 +5,7 @@ cd $(dirname $0)
 # remove files
 rm -f _cache_*
 rm -f scripts/nohup.out
- 
+
 # update environment.yml
 eval "$(conda shell.bash hook)"
 conda activate gan
